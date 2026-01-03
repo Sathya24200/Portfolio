@@ -233,7 +233,18 @@ const Portfolio = () => {
             </nav>
 
             {/* Hero Section */}
-            <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 pt-20 relative">
+            <section className="min-h-screen flex items-start md:items-center justify-center px-4 sm:px-6 pt-16 md:pt-20 relative">
+                {/* Background Image */}
+                <div
+                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                    style={{
+                        backgroundImage: `url(${process.env.PUBLIC_URL}/Img.png)`,
+                        opacity: 0.9,
+                        zIndex: 0
+                    }}
+                />
+
+
                 <div className="max-w-4xl mx-auto text-center relative z-10">
                     <div className="mb-6 space-y-6">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-xs sm:text-sm text-gray-700 animate-fade-in-down">
@@ -243,10 +254,10 @@ const Portfolio = () => {
                         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light text-black mb-4 tracking-tight animate-fade-in-up px-4" style={{ animationDelay: '0.1s' }}>
                             {personalInfo.name}
                         </h1>
-                        <p className="text-xl sm:text-2xl md:text-3xl text-gray-600 font-light mb-6 animate-fade-in-up px-4" style={{ animationDelay: '0.2s' }}>
+                        <p className="text-xl sm:text-2xl md:text-3xl text-gray-700 font-light mb-6 animate-fade-in-up px-4" style={{ animationDelay: '0.2s' }}>
                             {personalInfo.role}
                         </p>
-                        <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto animate-fade-in-up px-4" style={{ animationDelay: '0.3s' }}>
+                        <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto animate-fade-in-up px-4" style={{ animationDelay: '0.3s' }}>
                             {personalInfo.tagline}
                         </p>
                     </div>
