@@ -100,7 +100,7 @@ const Portfolio = () => {
     const downloadResume = () => {
         // Create a link element
         const link = document.createElement('a');
-        link.href = '/resume.pdf'; // Path to your resume PDF in the public folder
+        link.href = `${process.env.PUBLIC_URL}/Sathya Resume.pdf`; // Path to your resume PDF in the public folder
         link.download = 'Sathyamoorthy_R_Resume.pdf'; // Name for the downloaded file
         link.target = '_blank';
 
