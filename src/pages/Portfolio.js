@@ -193,7 +193,7 @@ const Portfolio = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
                     <div className="flex items-center justify-between">
                         <img
-                            src="/Img1.jpeg"
+                            src={`${process.env.PUBLIC_URL}/Img1.jpeg`}
                             alt="Profile"
                             className="w-12 h-12 rounded-full object-cover cursor-pointer hover:opacity-80 transition-opacity"
                             onClick={() => setIsProfileExpanded(true)}
@@ -394,7 +394,7 @@ const Portfolio = () => {
                         onClick={(e) => e.stopPropagation()}
                     >
                         <img
-                            src="/Img1.jpeg"
+                            src={`${process.env.PUBLIC_URL}/Img1.jpeg`}
                             alt="Profile Expanded"
                             className="w-64 h-64 md:w-96 md:h-96 rounded-full object-cover border-4 border-white shadow-2xl"
                         />
