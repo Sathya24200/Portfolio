@@ -233,7 +233,7 @@ const Portfolio = () => {
             </nav>
 
             {/* Hero Section */}
-            <section className="min-h-screen flex items-start md:items-center justify-center px-4 sm:px-6 pt-16 md:pt-20 relative">
+            <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 pt-20 pb-32 md:pb-0 relative">
                 {/* Background Image */}
                 <div
                     className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -243,8 +243,6 @@ const Portfolio = () => {
                         zIndex: 0
                     }}
                 />
-
-
                 <div className="max-w-4xl mx-auto text-center relative z-10">
                     <div className="mb-6 space-y-6">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full text-xs sm:text-sm text-gray-700 animate-fade-in-down">
